@@ -15,6 +15,10 @@ html {
       justify-content: center;
 }
 
+div {
+    height: 15px;
+}
+
 .PageDiv {
     width: initial;
     height: 2px;
@@ -66,4 +70,6 @@ html {
     font-size: 13pt;
     font-family: Cascadia Code;
     margin-left: 36.5px;
+    left: -40px;
+    position: relative;
 }
