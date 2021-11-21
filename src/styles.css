@@ -33,6 +33,11 @@ body {
 }
 
 .Input {
-    padding-left: 40px;
-    backround-color: transparent;
+    background-color: transparent;
+border: 2px solid transparent;
+color: white;
+content: "hello";
+font-size: 13pt;
+font-family: Cascadia Code;
+margin-left: 36.5px;
 }
