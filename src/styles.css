@@ -3,10 +3,10 @@ body {
 }
 
 .PageDiv {
+    width: initial;
+    height: 2px;
+    background-color: #fff3;
     display: flex;
-    width: 500px;
-    height: 5px;
-    background-color: white;
 }
 
 .TitleBar {
