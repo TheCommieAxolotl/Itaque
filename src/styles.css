@@ -1,5 +1,5 @@
 body {
-  background-color: #304242;
+    background: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4b3157 100%);
 }
 
 .Header {
