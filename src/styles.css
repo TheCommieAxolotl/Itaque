@@ -1,3 +1,19 @@
 body {
   background-color: #304242;
 }
+
+.Header {
+    font-size: 40pt;
+    font-weight: normal;
+    color: white;
+    font-family: Cascadia Code;
+    padding-left: 40px;
+}
+
+.Subview {
+    font-size: 20pt;
+    font-weight: normal;
+    color: white;
+    font-family: Cascadia Code;
+    padding-left: 40px;
+}
