@@ -1,5 +1,11 @@
 body {
     background: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4b3157 100%);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    min-height: 30ch;
+    min-width: 50vw;
+    padding: 2em;
 }
 
 .PageDiv {
