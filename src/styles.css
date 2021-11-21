@@ -31,3 +31,8 @@ body {
     font-family: Cascadia Code;
     padding-left: 40px;
 }
+
+.Input {
+    padding-left: 40px;
+    backround-color: transparent;
+}
