@@ -22,7 +22,12 @@ body {
     font-family: Arial;
 }
 
-
+.Link1 {
+    color: white;
+    font-size: 13pt;
+    font-family: Cascadia Code;
+    padding-left: 20px;
+}
 
 .Head {
     font-size: 13pt;
