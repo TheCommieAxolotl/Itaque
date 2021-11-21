@@ -34,8 +34,8 @@ div {
 }
 
 a #cursor {
-    background-color: #b5bd68;
-    animation: blink 2s infinite;
+    background-color: white;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
