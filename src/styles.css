@@ -54,6 +54,7 @@ a #cursor {
     font-size: 13pt;
     font-family: Cascadia Code;
     padding-left: 20px;
+    text-decoration: none;
 }
 
 .Head {
