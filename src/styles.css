@@ -33,6 +33,11 @@ div {
     font-family: Arial;
 }
 
+.Link1:focus,
+.Link1:hover {
+    font-weight: bold;
+}
+
 .Link1 {
     color: white;
     font-size: 13pt;
