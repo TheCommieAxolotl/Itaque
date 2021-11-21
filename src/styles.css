@@ -34,10 +34,10 @@ body {
 
 .Input {
     background-color: transparent;
-border: 2px solid transparent;
-color: white;
-content: "hello";
-font-size: 13pt;
-font-family: Cascadia Code;
-margin-left: 36.5px;
+    border: 2px solid transparent;
+    color: white;
+    content: "hello";
+    font-size: 13pt;
+    font-family: Cascadia Code;
+    margin-left: 36.5px;
 }
