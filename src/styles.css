@@ -2,6 +2,13 @@ body {
     background: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4b3157 100%);
 }
 
+.TitleBar {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+}
+
 .Header {
     font-size: 13pt;
     font-weight: normal;
