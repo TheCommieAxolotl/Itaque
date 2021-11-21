@@ -3,7 +3,7 @@ body {
 }
 
 .Header {
-    font-size: 20pt;
+    font-size: 13pt;
     font-weight: normal;
     color: white;
     font-family: Cascadia Code;
@@ -11,7 +11,7 @@ body {
 }
 
 .Subview {
-    font-size: 20pt;
+    font-size: 13pt;
     font-weight: normal;
     color: white;
     font-family: Cascadia Code;
