@@ -33,6 +33,17 @@ div {
     font-family: Arial;
 }
 
+a #cursor {
+    background-color: #b5bd68;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
 .Link1:focus,
 .Link1:hover {
     font-weight: bold;
