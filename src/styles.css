@@ -97,6 +97,7 @@ a #cursor {
     margin-left: 36.5px;
     left: -40px;
     position: relative;
+    width: 200px;
 }
 
 .Input:focus {
