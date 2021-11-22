@@ -29,6 +29,13 @@
 
       function submitted(event) {
           
+          
+          if (q.value.includes("open") == true) {
+              const url = q.value.replace("open", "");
+              const win = window.open(url, '_blank');
+              win.focus();
+          }
+          
           if (q.value.includes("search") == true) {
         event.preventDefault();
               
