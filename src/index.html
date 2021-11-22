@@ -26,12 +26,13 @@
     const f = document.getElementById('form');
       const q = document.getElementById('searchbar');
       const ddg = 'https://www.duckduckgo.com/?q=';
+      const www = 'https://www.'
 
       function submitted(event) {
           
           
           if (q.value.includes("open") == true) {
-              const url = "" + q.value.replace("open ", "");
+              const url = www + q.value.replace("open ", "");
               const win = window.open(url, '_blank');
               win.focus();
           }
