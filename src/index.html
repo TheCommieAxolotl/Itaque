@@ -31,7 +31,8 @@
           
           if (q.value.includes("search") == true) {
         event.preventDefault();
-        const url = ddg + q.value;
+              
+        const url = ddg + q.value.replace("search", "");
         const win = window.open(url, '_blank');
         win.focus();
           }
