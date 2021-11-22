@@ -11,6 +11,14 @@
     <script>
         function getfocusinput() {
             document.getElementById("searchbar").focus()
+            
+            const d = new Date();
+            const [date, time] = d.toLocaleString().split(" ");
+            textWriter(
+           `It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`
+            );
+            
+            console.log(`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`)
         }
         
         
