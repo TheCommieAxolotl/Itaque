@@ -23,6 +23,10 @@ div {
     color: #2E43C0;
 }
 
+.SearchButton {
+    display: none;
+}
+
 .PageDiv {
     width: initial;
     height: 2px;
