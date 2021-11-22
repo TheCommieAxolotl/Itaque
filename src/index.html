@@ -12,6 +12,16 @@
         function getfocusinput() {
             document.getElementById("searchbar").focus()
             
+function textWriter(output = "") {
+  const terminal = document.getElementById("body");
+  const outputNode = document.createElement("div");
+  outputNode.classList.add("body");
+  const textNode = document.createElement("p");
+  textNode.innerText = output;
+  outputNode.appendChild(textNode);
+  terminal.appendChild(outputNode);
+}
+
             const d = new Date();
             const [date, time] = d.toLocaleString().split(" ");
             textWriter(
