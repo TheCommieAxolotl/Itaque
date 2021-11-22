@@ -1,4 +1,4 @@
 # StartPage
 Custom StartPage
 
-Set the `StartPage.html` file as your new tab or home page.
+You can fork this and change links in `src/index.html`
