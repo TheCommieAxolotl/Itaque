@@ -23,14 +23,13 @@
     <button class="SearchButton" type="enter" action="search()">e</button>
     </form>
     <script>
-    const f = document.getElementById('form');
-    const q = document.getElementById('searchbar');
-    const ddg = 'https://www.google.com/search?q=';
-    const site = 'pagedart.com';
+    const form = document.getElementById('form');
+    const input = document.getElementById('searchbar');
+    const ddg = 'https://www.duckduckgo.com/?q=';
 
     function submitted(event) {
     event.preventDefault();
-    const url = ddg + site + '+' + q.value;
+    const url = ddg + q.value;
     const win = window.open(url, '_blank');
     win.focus();
 }
