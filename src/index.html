@@ -28,10 +28,14 @@
       const ddg = 'https://www.duckduckgo.com/?q=';
 
       function submitted(event) {
+          
+          if (q.value.includes("search") == true) {
         event.preventDefault();
         const url = ddg + q.value;
         const win = window.open(url, '_blank');
         win.focus();
+          }
+          
       }
 
       f.addEventListener('submit', submitted);
