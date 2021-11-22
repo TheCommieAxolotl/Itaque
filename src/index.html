@@ -25,12 +25,11 @@
     <script>
     const f = document.getElementById('form');
       const q = document.getElementById('searchbar');
-      const google = 'https://www.google.com/search?q=site%3A+';
-      const site = 'pagedart.com';
+      const ddg = 'https://www.dusckduckgo.com/?q=';
 
       function submitted(event) {
         event.preventDefault();
-        const url = google + site + '+' + q.value;
+        const url = ddg + q.value;
         const win = window.open(url, '_blank');
         win.focus();
       }
