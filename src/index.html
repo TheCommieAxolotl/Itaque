@@ -17,17 +17,25 @@
         <a class="Link1" href="https://canvas.newington.nsw.edu.au">canvas</a>
         <a class="Link1" href="https://spaces.newington.nsw.edu.au">spaces</a>
     <div></div>
-    <form>
+    <form id="form">
     <a class="Subview" >▲ <span id="Tilda">~ </span> <span id="cursor">_</span> </a>
        <input id="searchbar" class="Input"></input>
     <button class="SearchButton" type="enter" action="search()">e</button>
     </form>
     <script>
-        func search() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    window.open(https://duckduckgo.com/ + input, "_blank");
-                }
+    const f = document.getElementById('form');
+    const q = document.getElementById('searchbar');
+    const ddg = 'https://www.google.com/search?q=site%3A+';
+    const site = 'pagedart.com';
+
+    function submitted(event) {
+    event.preventDefault();
+    const url = ddg + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+}
+
+    f.addEventListener('submit', submitted);
     </script>
 </body>
 
