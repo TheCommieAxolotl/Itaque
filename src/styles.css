@@ -98,3 +98,7 @@ a #cursor {
     left: -45px;
     position: relative;
 }
+
+.Input:focus {
+    outline: 2px solid transparent;
+}
