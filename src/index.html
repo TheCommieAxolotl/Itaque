@@ -11,22 +11,11 @@
     <script>
         function getfocusinput() {
             document.getElementById("searchbar").focus()
-            
-function textWriter(output = "") {
-  const terminal = document.getElementById("body");
-  const outputNode = document.createElement("div");
-  outputNode.classList.add("body");
-  const textNode = document.createElement("p");
-  textNode.innerText = output;
-  outputNode.appendChild(textNode);
-  terminal.appendChild(outputNode);
-}
-
+  
+            const Header = document.getElementById("Head")
             const d = new Date();
             const [date, time] = d.toLocaleString().split(" ");
-            textWriter(
-           `It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`
-            );
+            Head.innerHTML=`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`;
             
             console.log(`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`)
         }
