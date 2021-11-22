@@ -48,8 +48,9 @@
       function submitted(event) {
           
            if (q.value.includes("about") == true) {
-              h.content("eeeeeeee")
-              s.content("")
+             event.preventDefault();
+              h.innerHTML("eeeeeeee")
+              s.innerHTML("")
           }
           
           if (q.value.includes("open") == true) {
