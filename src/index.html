@@ -27,17 +27,13 @@
     const input = document.getElementById('searchbar');
     const ddg = 'https://www.duckduckgo.com/?q=';
 
-        if (input.value.includes("search")) {
-        
-    function submitted(event) {
-    event.preventDefault();
+    function search() {
     const url = ddg + input.value;
     const win = window.open(url, '_blank');
     win.focus();
-    }
 }
-
     form.addEventListener('submit', submitted);
+
     </script>
 </body>
 
