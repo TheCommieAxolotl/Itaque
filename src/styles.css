@@ -19,6 +19,16 @@ html {
       justify-content: center;
 }
 
+::-moz-selection { 
+  color: white;
+  background: white;
+}
+
+::selection {
+  color: white;
+  background: white;
+}
+
 div {
     height: 15px;
 }
