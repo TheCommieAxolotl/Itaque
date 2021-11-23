@@ -102,7 +102,7 @@ a #cursor {
     padding-left: 40px;
 }
 
-.NotFound {
+#aboutText {
     font-size: 13pt;
     font-weight: normal;
     color: white;
