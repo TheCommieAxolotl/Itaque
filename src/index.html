@@ -54,7 +54,7 @@
 
       function submitted(event) {
           
-           if (q.value.includes("about") == true) {
+         if (q.value.includes("about") == true) {
              event.preventDefault();
               t.innerHTML='made by TheCommieAxolotl';
           }
@@ -62,6 +62,7 @@
           if (q.value.includes("open") == true) {
               const url = www + q.value.replace("open ", "");
               const win = window.open(url, '_blank');
+              window.close('https://thecommieaxolotl.github.io/StartPage/src/index.html');
               win.focus();
           }
           
