@@ -102,6 +102,13 @@ a #cursor {
     padding-left: 40px;
 }
 
+.cnf {
+    font-size: 13pt;
+    font-weight: normal;
+    color: white;
+    font-family: Cascadia Code;
+    padding-left: 20px;
+}
 .Input {
     background-color: transparent;
     border: 2px solid transparent;
