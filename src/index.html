@@ -42,7 +42,6 @@
        <input class="Input" autocomplete="off" id="searchbar" ></input>
     <button class="SearchButton" type="enter" action="search()">e</button>
     </form>
-    <div></div>
     <p class="Subview" id="aboutText"></p>
     <script>
       const h = document.getElementsByClassName('Head');
@@ -54,6 +53,8 @@
       const www = 'https://www.'
 
       function submitted(event) {
+          
+          t.innerHTML='unknown command '${q.value}'';
           
            if (q.value.includes("about") == true) {
              event.preventDefault();
