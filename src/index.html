@@ -57,11 +57,12 @@
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
               t.innerHTML='invalid command %d', input;
+              console.log('invalid command %d', input)
           }
           
            if (q.value.includes("about") == true) {
              event.preventDefault();
-              t.innerHTML='uwu';
+              t.innerHTML='made by TheCommieAxolotl';
           }
           
           if (q.value.includes("open") == true) {
