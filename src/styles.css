@@ -1,9 +1,14 @@
 body {
     background-color: #1d1f21;
-    border-radius: 2px;
+    width: 700px;
+    height: 450px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    padding: 1.5em 0em;
+    /*border-radius: 2px;
     min-height: 30ch;
     min-width: 50vw;
-    padding: 2em;
+    padding: 2em;*/
 }
 
 html {
