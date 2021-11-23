@@ -3,15 +3,11 @@ body {
     width: 700px;
     height: 450px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 4px !important;
-    padding-top: 1.5em !important;
-    padding-right: 2.5em !important;
-    padding-bottom: 1.5em !important;
-    padding-left: 2.5em !important;
-    /*border-radius: 2px;
-    min-height: 30ch;
-    min-width: 50vw;
-    padding: 2em;*/
+    border-radius: 4px;
+    padding-top: 1.5em;
+    padding-right: 2.5em;
+    padding-bottom: 1.5em;
+    padding-left: 2.5em;
 }
 
 html {
