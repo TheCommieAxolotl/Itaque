@@ -20,13 +20,13 @@ html {
 }
 
 ::-moz-selection { 
-  color: white;
-  background: white;
+  color: black;
+  background: #BAD6FB;
 }
 
 ::selection {
-  color: white;
-  background: white;
+  color: black;
+  background: #BAD6FB;
 }
 
 div {
