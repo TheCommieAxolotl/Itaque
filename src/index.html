@@ -42,9 +42,12 @@
        <input class="Input" autocomplete="off" id="searchbar" ></input>
     <button class="SearchButton" type="enter" action="search()">e</button>
     </form>
+    <div></div>
+    <p id="aboutText"></p>
     <script>
       const h = document.getElementsByClassName('Head');
       const s = document.getElementsByClassName('Subview');
+      const t = document.getElementById('aboutText');
       const f = document.getElementById('form');
       const q = document.getElementById('searchbar');
       const ddg = 'https://www.duckduckgo.com/?q=';
@@ -54,8 +57,7 @@
           
            if (q.value.includes("about") == true) {
              event.preventDefault();
-              h.innerHTML="eeeeeeee";
-              s.innerHTML="hi"
+              t.innerHTML='uwu';
           }
           
           if (q.value.includes("open") == true) {
