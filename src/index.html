@@ -56,7 +56,7 @@
           
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
-              t.innerHTML='command not found: ${q.value}';
+              t.innerHTML='command not found: '${q.value};
               q.select();
           }
           
