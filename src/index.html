@@ -54,12 +54,6 @@
 
       function submitted(event) {
           
-          if (q.value.includes("about", "open", "search") == false) {
-              event.preventDefault();
-              t.innerHTML='command not found: " + ${q.value} +"';
-              q.select();
-          }
-          
            if (q.value.includes("about") == true) {
              event.preventDefault();
               t.innerHTML='made by TheCommieAxolotl';
@@ -75,6 +69,12 @@
               const url = ddg + q.value.replace("search", "");
               const win = window.open(url, '_blank');
               win.focus();
+          }
+          
+          if (q.value.includes("about", "open", "search") == false) {
+              event.preventDefault();
+              t.innerHTML='command not found: " + ${q.value} +"';
+              q.select();
           }
           
       }
