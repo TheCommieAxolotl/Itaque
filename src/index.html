@@ -50,12 +50,13 @@
       const q = document.getElementById('searchbar');
       const ddg = 'https://www.duckduckgo.com/?q=';
       const www = 'https://www.'
+      const input = q.value
 
       function submitted(event) {
           
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
-              t.innerHTML='unknown command ${q.value}';
+              t.innerHTML='unknown command ${input}';
           }
           
            if (q.value.includes("about") == true) {
