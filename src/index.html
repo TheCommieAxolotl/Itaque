@@ -54,6 +54,7 @@
       function submitted(event) {
           
           if (q.value.includes("about", "open", "search") == false) {
+              event.preventDefault();
               t.innerHTML='unknown command ${q.value}';
           }
           
