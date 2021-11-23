@@ -56,7 +56,7 @@
           
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
-              t.innerHTML='unknown command ${input}';
+              t.innerHTML='invalid command %d', input;
           }
           
            if (q.value.includes("about") == true) {
