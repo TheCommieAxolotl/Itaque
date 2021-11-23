@@ -25,7 +25,6 @@
             document.getElementById("searchbar").focus()
         }
         
-        
     </script>
 </head>
 
@@ -54,7 +53,9 @@
 
       function submitted(event) {
           
-          t.innerHTML='unknown command '${q.value}'';
+          if (q.value.includes("about", "open", "search") == false) {
+              t.innerHTML='unknown command '${q.value}'';
+          }
           
            if (q.value.includes("about") == true) {
              event.preventDefault();
