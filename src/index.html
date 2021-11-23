@@ -52,11 +52,11 @@
       const www = 'https://www.';
       const input = q.value.toLocaleString();
 
-      function submitted(event, input) {
+      function submitted(event) {
           
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
-              t.innerHTML='command not found: ${input}';
+              t.innerHTML='command not found: ${q.value}';
               q.select();
           }
           
