@@ -9,7 +9,7 @@
     <link href="https://thecommieaxolotl.github.io/StartPage/src/styles.css" rel="stylesheet">
     
     <script>
-        function getfocusinput() {
+        function setup() {
             document.getElementById("searchbar").focus()
   
             const Header = document.getElementById("Head")
@@ -18,13 +18,17 @@
             Header.innerHTML=`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`;
             
             console.log(`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}.`)
+            
+         function focusInput() {
+            document.getElementById("searchbar").focus()
+         }
         }
         
         
     </script>
 </head>
 
-<body id="body" onload="getfocusinput()">
+<body id="body" onload="setup()" onclick="focusInput()">
   <p class="Head" id="Head" >user@home <span id="Tilda">&gt;</span> newtab</p>
     <p class="Subview">▲ <span id="Tilda">~ </span> cd tabs/firefox </p>
     <p class="Subview">▲ <span id="Tilda">~ </span> ls </p>
