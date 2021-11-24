@@ -1,11 +1,11 @@
 @import "node_modules/nord/src/nord.css";
 
 body {
-    background-color: var(nord1) !important;
+    background-color: #3b4252 !important;
 }
 
 html {
-      background: var(nord0);
+      background: #2e3440 !important;
 }
 
 ::-moz-selection { 
@@ -19,7 +19,7 @@ html {
 }
 
 #Tilda {
-    color: #2E43C0;
+    color: #5e81ac !important;
 }
 
 .Link1:focus,
