@@ -78,13 +78,13 @@
               q.select();
           }
           
-          if (q.value.includes("theme") {
+          if (q.value.includes("theme") == true) {
                event.preventDefault();
-           if (q.value.includes("nord") {
+           if (q.value.includes("nord") == true) {
             body.classList.replace('default', 'nord');
             localStorage.setItem('theme', 'nord');
             }
-           if (q.value.includes("default") {
+           if (q.value.includes("default") == true) {
             body.classList.replace('nord', 'default');
             localStorage.setItem('theme', 'default');
             }
