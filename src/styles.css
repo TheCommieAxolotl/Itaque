@@ -9,18 +9,23 @@
     
     --tilda-default: #2e43c0;
     --tilda-nord: #5e81ac; 
+    
+    --hover-default: #F2AA65;
+    --hover-nord: #ebcb8b;
 }
 
 .default {
     --bg: var(--bg-default);
     --term: var(--term-default);
     --tilda: var(--tilda-default);
+    --hover: var(--hover-default);
 }
 
 .nord {
     --bg: var(--bg-nord);
     --term: var(--term-nord);
     --tilda: var(--tilda-nord);
+    --hover: var(--hover-nord);
 }
 
 body {
