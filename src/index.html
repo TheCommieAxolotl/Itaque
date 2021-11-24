@@ -9,6 +9,8 @@
     <link href="https://thecommieaxolotl.github.io/StartPage/src/styles.css" rel="stylesheet">
     
     <script>
+        const body = document.body;
+        
         function setup() {
             document.getElementById("searchbar").focus()
   
@@ -16,6 +18,13 @@
             const d = new Date();
             const [date, time] = d.toLocaleString().split(" ");
             Header.innerHTML=`It's ${time.slice(0, time.length - 3)} on ${date.replace(",", "")}`;
+            
+            
+            const theme = localStorage.getItem('theme');
+
+            if (theme) {
+                 body.classList.add(theme);
+            }
             
         }
         
@@ -49,7 +58,7 @@
       const ddg = 'https://www.duckduckgo.com/?q=';
       const www = 'https://www.';
       const input = q.value.toLocaleString();
-      const body = document;
+      const body = document.body;
 
       function submitted(event) {
           
