@@ -78,6 +78,13 @@
               q.select();
           }
           
+          if (q.value.includes("theme") == true) {
+              event.preventDefault();
+              if (q.value.includes("nord") == true) {
+                localStorage.setItem(LS_THEME_KEY, nord);
+              }
+          }
+          
       }
 
       f.addEventListener('submit', submitted);
