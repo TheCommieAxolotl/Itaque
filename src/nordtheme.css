@@ -1,11 +1,11 @@
 @import "node_modules/nord/src/nord.css";
 
 body {
-    background-color: var(--nord1) !important;
+    background-color: var(nord1) !important;
 }
 
 html {
-      background: var(--nord0);
+      background: var(nord0);
 }
 
 ::-moz-selection { 
