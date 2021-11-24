@@ -1,2 +1,51 @@
 @import "node_modules/nord/src/nord.css";
 
+body {
+    background-color: var(--nord1) !important;
+}
+
+html {
+      background: var(--nord0);
+}
+
+::-moz-selection { 
+  color: black;
+  background: #BAD6FB;
+}
+
+::selection {
+  color: black;
+  background: #BAD6FB;
+}
+
+#Tilda {
+    color: #2E43C0;
+}
+
+.Link1:focus,
+.Link1:hover {
+    color: #F2AA65;
+}
+
+.Link1 {
+    color: white;
+}
+
+.Head {
+    color: white;
+}
+
+.Header {
+    color: white;
+}
+
+.Subview {
+    color: white;
+}
+
+#aboutText {
+    color: white;
+}
+.Input {
+    color: white;
+}
