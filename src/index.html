@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="default" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
     </script>
 </head>
 
-<body class="default" id="body" onload="setup()" onclick="focusInput()">
+<body id="body" onload="setup()" onclick="focusInput()">
   <p class="Head" id="Head" >user@home <span id="Tilda">&gt;</span> newtab</p>
     <p class="Subview">▲ <span id="Tilda">~ </span> cd tabs/firefox </p>
     <p class="Subview">▲ <span id="Tilda">~ </span> ls </p>
@@ -49,7 +49,7 @@
       const ddg = 'https://www.duckduckgo.com/?q=';
       const www = 'https://www.';
       const input = q.value.toLocaleString();
-      const body = document.body;
+      const body = document.html;
 
       function submitted(event) {
           
