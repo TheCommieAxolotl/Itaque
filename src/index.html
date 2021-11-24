@@ -51,7 +51,7 @@
       const www = 'https://www.';
       const input = q.value.toLocaleString();
 
-      function submitted(event) {
+      function submitted(event, input) {
           
          if (q.value.includes("about") == true) {
              event.preventDefault();
@@ -72,9 +72,9 @@
               win.focus();
           }
           
-          if (q.value.includes("about", "open", "search") == false) {
+          if (q.value.includes("about", "open", "search") == false (input)) {
               event.preventDefault();
-              t.innerHTML='command not found';
+              t.innerHTML='command not found ${input}';
               q.select();
           }
           
