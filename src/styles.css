@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
 body {
     background-color: #1d1f21;
     width: 700px;
@@ -75,14 +77,14 @@ a #cursor {
 .Link1 {
     color: white;
     font-size: 13pt;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     padding-left: 20px;
     text-decoration: transparent;
 }
 
 .Head {
     font-size: 13pt;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     color: white;
 }
 
@@ -90,7 +92,7 @@ a #cursor {
     font-size: 13pt;
     font-weight: normal;
     color: white;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     padding-left: 40px;
 }
 
@@ -98,7 +100,7 @@ a #cursor {
     font-size: 13pt;
     font-weight: normal;
     color: white;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     padding-left: 40px;
 }
 
@@ -106,7 +108,7 @@ a #cursor {
     font-size: 13pt;
     font-weight: normal;
     color: white;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     padding-left: 20px;
 }
 .Input {
@@ -115,7 +117,7 @@ a #cursor {
     color: white;
     content: "hello";
     font-size: 13pt;
-    font-family: Cascadia Code;
+    font-family: 'Cascadia Code';
     margin-left: 36.5px;
     left: -40px;
     position: relative;
