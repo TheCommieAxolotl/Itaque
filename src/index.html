@@ -49,6 +49,7 @@
       const ddg = 'https://www.duckduckgo.com/?q=';
       const www = 'https://www.';
       const input = q.value.toLocaleString();
+      const body = document.body;
 
       function submitted(event) {
           
@@ -73,10 +74,20 @@
           
           if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
-              t.innerHTML='command not found ${input}';
+              t.innerHTML='command not found';
               q.select();
           }
           
+          if (q.value.includes("theme") {
+           if (q.value.includes("nord") {
+            body.classList.replace('default', 'nord');
+            localStorage.setItem('theme', 'nord');
+            }
+           if (q.value.includes("default") {
+            body.classList.replace('nord', 'default');
+            localStorage.setItem('theme', 'default');
+            }
+          }
       }
 
       f.addEventListener('submit', submitted);
