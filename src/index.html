@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>New Terminal Tab</title>
     <link href="https://thecommieaxolotl.github.io/StartPage/src/styles.css" rel="stylesheet">
-     <link href="https://thecommieaxolotl.github.io/StartPage/src/nordtheme.css" rel="stylesheet">
     
     <script>
         function setup() {
@@ -51,7 +50,7 @@
       const www = 'https://www.';
       const input = q.value.toLocaleString();
 
-      function submitted(event, input) {
+      function submitted(event) {
           
          if (q.value.includes("about") == true) {
              event.preventDefault();
@@ -72,7 +71,7 @@
               win.focus();
           }
           
-          if (q.value.includes("about", "open", "search") == false (input)) {
+          if (q.value.includes("about", "open", "search") == false) {
               event.preventDefault();
               t.innerHTML='command not found ${input}';
               q.select();
