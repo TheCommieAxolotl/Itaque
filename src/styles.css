@@ -59,7 +59,7 @@ div {
 }
 
 #Tilda {
-   color: var(--tilda);
+   color: var(--tilda) !important;
 }
 
 .SearchButton {
