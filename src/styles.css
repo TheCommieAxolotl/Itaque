@@ -1,7 +1,30 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
+:root {
+    --bg-default: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4B3058 100%);
+    --bg-nord: #2e3440;
+    
+    --term-default: #1d1f21;
+    --term-nord: #3b4252;
+    
+    --tilda-default: #2e43c0;
+    --tilda-nord: #5e81ac; 
+}
+
+.default {
+    --bg: var(--bg-default);
+    --term: var(--term-default);
+    --tilda: var(--tilda-default);
+}
+
+.nord {
+    --bg: var(--bg-nord);
+    --term: var(--term-nord);
+    --tilda: var(--tilda-nord);
+}
+
 body {
-    background-color: #1d1f21;
+    background-color: var(--term);
     width: 700px;
     height: 450px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
@@ -14,7 +37,7 @@ body {
 
 html {
       align-items: center;
-      background: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4B3058 100%);
+      background: var(--bg);
       color: #232327;
       display: flex;
       height: 100%;
