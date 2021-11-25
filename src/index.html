@@ -72,7 +72,10 @@
          if (q.value.includes("about") == true) {
              event.preventDefault();
               t.innerHTML='made by TheCommieAxolotl';
-          }
+              help1.innerHTML='';
+              help2.innerHTML='';
+              help3.innerHTML='';
+         }
           
           if (q.value.includes("open") == true) {
               const url = www + q.value.replace("open ", "");
@@ -92,6 +95,9 @@
               event.preventDefault();
               t.innerHTML='command not found';
               q.select();
+              help1.innerHTML='';
+              help2.innerHTML='';
+              help3.innerHTML='';
           }
           
           if (q.value.includes("theme") == true) {
