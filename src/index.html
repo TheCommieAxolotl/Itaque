@@ -49,12 +49,19 @@
        <button class="SearchButton" type="enter" action="search()">e</button>
     </form>
     <p class="NotFound" id="aboutText" ></p>
+    <p class="Subview" id="help1" ></p>
+    <p class="Subview" id="help2" ></p>
+    <p class="Subview" id="help3" ></p>
     <script>
       const h = document.getElementsByClassName('Head');
       const s = document.getElementsByClassName('Subview');
       const t = document.getElementById('aboutText');
       const f = document.getElementById('form');
       const q = document.getElementById('searchbar');
+      const help1 = document.getElementById('help1');
+      const help2 = document.getElementById('help2');
+      const help3 = document.getElementById('help3');
+        
       const ddg = 'https://www.duckduckgo.com/?q=';
       const www = 'https://www.';
       const input = q.value.toLocaleString();
@@ -96,7 +103,7 @@
                 body.className = "";
                 body.classList.add('nord');
                 localStorage.setItem('theme', 'nord');
-                t.innerHTML='theme updated';
+                t.innerHTML='theme updated, default';
             }
               
            if (q.value.includes("default") == true) {
@@ -104,7 +111,7 @@
                 body.className = "";
                 body.classList.add('default');
                 localStorage.setItem('theme', 'default');
-                t.innerHTML='theme updated';
+                t.innerHTML='theme updated, nord';
             }
               
            if (q.value.includes("gruvbox") == true) {
@@ -112,10 +119,18 @@
                 body.className = "";
                 body.classList.add('gruvbox');
                 localStorage.setItem('theme', 'gruvbox');
-                t.innerHTML='theme updated';
+                t.innerHTML='theme updated, gruvbox';
             }
               
           }
+          
+           if (q.value.includes("help") == true) {
+                event.preventDefault();
+                t.innerHTML='commands:';
+                help1.innerHTML='search - searches for a string';
+                help2.innerHTML='open - opens a web page';
+                help3.innerHTML='theme - sets a terminal theme';
+            }
       }
 
       f.addEventListener('submit', submitted);
