@@ -140,6 +140,21 @@
                 help2.innerHTML='open - opens a web page';
                 help3.innerHTML='theme - sets a terminal theme';
             }
+          
+            if (q.value.includes("reset") == true) {
+                body.className = "";
+                body.classList.add('default');
+                localStorage.setItem('theme', 'default');
+                
+                t.innerHTML='';
+                help1.innerHTML='';
+                help2.innerHTML='';
+                help3.innerHTML='terminal reset...';
+                
+                if (q.value.includes("--noR") == true) {
+                 event.preventDefault();
+                }
+            }
       }
 
       f.addEventListener('submit', submitted);
