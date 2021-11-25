@@ -99,12 +99,12 @@ div {
 .TitleBar {
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--text);
     font-family: Arial;
 }
 
 a #cursor {
-    background-color: white;
+    background-color: var(--text);
     animation: blink 1s infinite;
 }
 
@@ -121,7 +121,7 @@ a #cursor {
 }
 
 .Link1 {
-    color: white;
+    color: var(--text);
     font-size: 13pt;
     font-family: 'Cascadia Code';
     padding-left: 20px;
@@ -131,13 +131,13 @@ a #cursor {
 .Head {
     font-size: 13pt;
     font-family: 'Cascadia Code';
-    color: white;
+    color: var(--text);
 }
 
 .Header {
     font-size: 13pt;
     font-weight: normal;
-    color: white;
+    color: var(--text);
     font-family: 'Cascadia Code';
     padding-left: 40px;
 }
@@ -145,7 +145,7 @@ a #cursor {
 .Subview {
     font-size: 13pt;
     font-weight: normal;
-    color: white;
+    color: var(--text);
     font-family: 'Cascadia Code';
     padding-left: 40px;
 }
@@ -153,14 +153,14 @@ a #cursor {
 #aboutText {
     font-size: 13pt;
     font-weight: normal;
-    color: white;
+    color: var(--text);
     font-family: 'Cascadia Code';
     padding-left: 20px;
 }
 .Input {
     background-color: transparent;
     border: 2px solid transparent;
-    color: white;
+    color: var(--text);
     content: "hello";
     font-size: 13pt;
     font-family: 'Cascadia Code';
