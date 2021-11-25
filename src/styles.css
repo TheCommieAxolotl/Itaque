@@ -35,7 +35,7 @@
     --term: var(--term-nord);
     --tilda: var(--tilda-nord);
     --hover: var(--hover-nord);
-     --text: var(--text-nord);
+    --text: var(--text-nord);
 }
 
 .gruvbox {
@@ -43,7 +43,7 @@
     --term: var(--term-gruvbox);
     --tilda: var(--tilda-gruvbox);
     --hover: var(--hover-gruvbox);
-     --text: var(--text-gruvbox);
+    --text: var(--text-gruvbox);
 }
 
 body {
