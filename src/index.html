@@ -88,27 +88,31 @@
           }
           
           if (q.value.includes("theme") == true) {
-               event.preventDefault();
-              t.innerHTML='theme not found';
+                event.preventDefault();
+                t.innerHTML='theme not found';
+              
            if (q.value.includes("nord") == true) {
                 event.preventDefault();
-            body.classList.replace('default', 'nord');
-            localStorage.setItem('theme', 'nord');
-               t.innerHTML='';
+                body.className = "";
+                body.classList.add('nord');
+                localStorage.setItem('theme', 'nord');
+                t.innerHTML='';
             }
+              
            if (q.value.includes("default") == true) {
                 event.preventDefault();
-            body.classList.remove();
-            body.classList.add('nord');
-            localStorage.setItem('theme', 'default');
-               t.innerHTML='';
+                body.className = "";
+                body.classList.add('default');
+                localStorage.setItem('theme', 'default');
+                t.innerHTML='';
             }
+              
            if (q.value.includes("gruvbox") == true) {
                 event.preventDefault();
-            body.classList.remove();
-            body.classList.add('gruvbox');
-            localStorage.setItem('theme', 'gruvbox');
-               t.innerHTML='';
+                body.className = "";
+                body.classList.add('gruvbox');
+                localStorage.setItem('theme', 'gruvbox');
+                t.innerHTML='';
             }
               
           }
