@@ -89,7 +89,7 @@
           
           if (q.value.includes("theme") == true) {
                event.preventDefault();
-              t.innerHTML='';
+              t.innerHTML='theme not found';
            if (q.value.includes("nord") == true) {
                 event.preventDefault();
             body.classList.replace('default', 'nord');
@@ -98,10 +98,19 @@
             }
            if (q.value.includes("default") == true) {
                 event.preventDefault();
-            body.classList.replace('nord', 'default');
+            body.classList.remove();
+            body.classList.add('nord');
             localStorage.setItem('theme', 'default');
                t.innerHTML='';
             }
+           if (q.value.includes("gruvbox") == true) {
+                event.preventDefault();
+            body.classList.remove();
+            body.classList.add('gruvbox');
+            localStorage.setItem('theme', 'gruvbox');
+               t.innerHTML='';
+            }
+              
           }
       }
 
