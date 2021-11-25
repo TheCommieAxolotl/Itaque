@@ -117,7 +117,7 @@ a #cursor {
 .Link1:focus,
 .Link1:hover {
     font-weight: bold;
-    color: #F2AA65;
+    color: var(--hover);
 }
 
 .Link1 {
