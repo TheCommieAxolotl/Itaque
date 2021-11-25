@@ -3,11 +3,11 @@
 :root {
     --bg-default: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4B3058 100%);
     --bg-nord: #2e3440;
-    --bg-gruvbox: #282828;
+    --bg-gruvbox: #E0D4B0;
     
     --term-default: #1d1f21;
     --term-nord: #3b4252;
-    --term-gruvbox: #7B6F66;
+    --term-gruvbox: #282828;
     
     --tilda-default: #2e43c0;
     --tilda-nord: #5e81ac; 
@@ -16,6 +16,10 @@
     --hover-default: #F2AA65;
     --hover-nord: #ebcb8b;
     --hover-gruvbox: #F1BF4F;
+    
+    --text-default: white;
+    --text-nord: white;
+    --text-gruvbox: #E0D4B0;
 }
 
 .default {
@@ -23,6 +27,7 @@
     --term: var(--term-default);
     --tilda: var(--tilda-default);
     --hover: var(--hover-default);
+    --text: var(--text-default);
 }
 
 .nord {
@@ -30,6 +35,7 @@
     --term: var(--term-nord);
     --tilda: var(--tilda-nord);
     --hover: var(--hover-nord);
+     --text: var(--text-nord);
 }
 
 .gruvbox {
@@ -37,6 +43,7 @@
     --term: var(--term-gruvbox);
     --tilda: var(--tilda-gruvbox);
     --hover: var(--hover-gruvbox);
+     --text: var(--text-gruvbox);
 }
 
 body {
