@@ -91,7 +91,7 @@
               win.focus();
           }
           
-          if (q.value.includes("about", "open", "search") == false) {
+          if (q.value.includes("about", "open", "search", "theme", "reset", "help") == false) {
               event.preventDefault();
               t.innerHTML='command not found';
               q.select();
