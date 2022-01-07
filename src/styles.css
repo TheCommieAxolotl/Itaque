@@ -4,22 +4,27 @@
     --bg-default: linear-gradient(90deg, rgb(58, 49, 90) 0%, rgb(59, 49, 76) 45%, #4B3058 100%);
     --bg-nord: #2e3440;
     --bg-gruvbox: #E0D4B0;
+    --bg-ultra: #101014;
     
     --term-default: RGBA(25, 23, 36, 0.8);
     --term-nord: #3b4252;
     --term-gruvbox: #282828;
+    --term-ultra: #17161b;
     
     --tilda-default: #2e43c0;
     --tilda-nord: #5e81ac; 
     --tilda-gruvbox: #558387;
+    --tilda-ultra: #6e6af6;
     
     --hover-default: #F2AA65;
     --hover-nord: #ebcb8b;
     --hover-gruvbox: #F1BF4F;
+    --hover-ultra: #6f6af64d;
     
     --text-default: white;
     --text-nord: white;
     --text-gruvbox: #E0D4B0;
+    --text-gruvbox: #dcddde;
 }
 
 .default {
@@ -44,6 +49,14 @@
     --tilda: var(--tilda-gruvbox);
     --hover: var(--hover-gruvbox);
     --text: var(--text-gruvbox);
+}
+
+.ultra {
+    --bg: var(--bg-ultra);
+    --term: var(--term-ultra);
+    --tilda: var(--tilda-ultra);
+    --hover: var(--hover-ultra);
+    --text: var(--text-ultra);
 }
 
 body {
