@@ -131,6 +131,14 @@
                 t.innerHTML='theme updated, gruvbox';
             }
               
+            if (q.value.includes("ultra") == true) {
+              event.preventDefault();
+              body.className = "";
+              body.classList.add('ultra');
+              localStorage.setItem('theme', 'ultra');
+              t.innerHTML='theme updated, ultra';
+           }
+              
           }
           
            if (q.value.includes("help") == true) {
