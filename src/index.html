@@ -86,7 +86,7 @@
           }
           
           if (q.value.includes("!g")) {        
-              const url = gg + q.value.replace("search", "");
+              const url = gg + q.value.replace("!g", "");
               const win = window.open(url, '_blank');
               window.close('https://thecommieaxolotl.github.io/StartPage/src/index.html');
               win.focus();
