@@ -61,8 +61,8 @@
 
 body {
     background-color: var(--term);
-    width: 700px;
-    height: 450px;
+    width: 55%;
+    height: 60%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     padding-top: 1.5em;
