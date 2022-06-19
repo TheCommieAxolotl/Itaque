@@ -1,0 +1,31 @@
+@use "../abstracts";
+
+button,
+.button {
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    @include abstracts.backdrop_primary;
+
+    transition: all 0.1s ease;
+    &:focus,
+    &:hover {
+        outline: none;
+        border: abstracts.$border_secondary;
+    }
+
+    &__filled {
+        background-color: var(--brand);
+    }
+    &__empty {
+        background-color: transparent;
+    }
+    &__danger {
+        background-color: abstracts.$danger;
+    }
+    &__disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

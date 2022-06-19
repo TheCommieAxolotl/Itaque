@@ -1,0 +1,6 @@
+@use "variables";
+
+@mixin backdrop_primary {
+    border: variables.$border-primary;
+    background-color: variables.$background_primary;
+}

@@ -1,4 +1,6 @@
-# StartPage
-Custom StartPage
+# Meet Itaque, a clean and simple new tab page!
 
-You can fork this and change links in `src/index.html`
+> ## Itaque
+>  /ˈi.ta.kʷe/
+>
+> Latin. *therefore; and so; in this way*

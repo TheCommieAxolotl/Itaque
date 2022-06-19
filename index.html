@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Itaque</title>
+        <link rel="icon" href="/assets/Itaque@Light.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <article class="main__article">
+                <div class="main__article__note">
+                    <textarea
+                        spellcheck="false"
+                        placeholder="quick notes an' stuff"
+                        class="main__article__note__textarea"
+                        name="main__article__note__textarea"
+                        id="main__article__note__textarea"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <div class="main__article__note__actions">
+                        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m8.086 18.611 5.996-14.004a1 1 0 0 1 1.878.677l-.04.11-5.996 14.004a1 1 0 0 1-1.878-.677l.04-.11 5.996-14.004L8.086 18.61Zm-5.793-7.318 4-4a1 1 0 0 1 1.497 1.32l-.083.094L4.414 12l3.293 3.293a1 1 0 0 1-1.32 1.498l-.094-.084-4-4a1 1 0 0 1-.083-1.32l.083-.094 4-4-4 4Zm14-4.001a1 1 0 0 1 1.32-.083l.093.083 4.001 4.001a1 1 0 0 1 .083 1.32l-.083.095-4.001 3.995a1 1 0 0 1-1.497-1.32l.084-.095L19.584 12l-3.293-3.294a1 1 0 0 1 0-1.414Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="main__article__link_grid">
+                    <a class="main__article__link_grid__item" href="https://apple.com"> </a>
+                    <a class="main__article__link_grid__item" href="https://apple.com"> </a>
+                    <a class="main__article__link_grid__item" href="https://apple.com"> </a>
+                    <button class="main__article__link_grid__item plus">
+                        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.883 3.007 12 3a1 1 0 0 1 .993.883L13 4v7h7a1 1 0 0 1 .993.883L21 12a1 1 0 0 1-.883.993L20 13h-7v7a1 1 0 0 1-.883.993L12 21a1 1 0 0 1-.993-.883L11 20v-7H4a1 1 0 0 1-.993-.883L3 12a1 1 0 0 1 .883-.993L4 11h7V4a1 1 0 0 1 .883-.993L12 3l-.117.007Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </article>
+            <aside class="main__aside">
+                <div class="rss">
+                    <input class="rss__input" placeholder="RSS Feed URL" />
+                    <div class="rss__feed"></div>
+                </div>
+            </aside>
+        </div>
+        <script src="/js/RSS.js" defer></script>
+        <script src="/js/QuickNote.js" defer></script>
+        <script src="/js/Links.js" defer></script>
+        <script src="/js/Settings.js"></script>
+    </body>
+</html>
