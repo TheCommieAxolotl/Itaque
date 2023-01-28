@@ -1,1 +1,8 @@
-**/.DS_Store
+# MacOS Files
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Output
+public/

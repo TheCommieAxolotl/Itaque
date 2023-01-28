@@ -1,4 +1,5 @@
-# Meet Itaque, a clean and simple new tab page!
+# Itaque
+Meet Itaque, a clean and simple new tab page!
 
 > ## Itaque
 >  /ˈi.ta.kʷe/

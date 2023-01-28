@@ -1,0 +1,244 @@
+<script>
+    _$etcherCore.c[Object.keys(_$etcherCore.c)[0]].shadowRoot.querySelector("input").focus();
+
+    window.updateLink = (name, url) => {
+        const links = JSON.parse(localStorage.getItem("links") || "[]");
+
+        links.push({ name, url });
+
+        localStorage.setItem("links", JSON.stringify(links));
+
+        location.reload();
+    }
+
+    window.removeLink = (name) => {
+        const links = JSON.parse(localStorage.getItem("links") || "[]");
+
+        localStorage.setItem("links", JSON.stringify(links.filter((link) => link.name !== name)));
+
+        location.reload();
+    }
+
+    window.addEventListener('resize', (e) => {
+        $.size.set(`${document.documentElement.clientWidth}x${document.documentElement.clientHeight}`)
+    })
+</script>
+
+{@state size = `${document.documentElement.clientWidth}x${document.documentElement.clientHeight}`}
+
+<div class="console" @click={() => {
+    _$etcherCore.c[Object.keys(_$etcherCore.c)[0]].shadowRoot.querySelector("input").focus();
+}}>
+    <div class="input">
+        <span class="prompt">▲ ~/ </span>
+        <span class="text">neofetch</span>
+    </div>
+    <div class="result">
+        <span></span>
+        <span><span class="green">                    'c.           </span>┌───────── Browser Information ──────────┐</span>
+        <span><span class="green">                 ,xNMM.           </span>  Host : {{navigator.userAgent.split(" ")[0]}}</span>
+        <span><span class="green">               .OMMMMo            </span>  Platform : {{navigator.platform}}</span>
+        <span><span class="green">               OMMM0,             </span>  GPU : Apple M1</span>
+        <span><span class="green">     .;loddo:' loolloddol;.       </span>  Memory: {{`${window.performance?.memory?.usedJSHeapSize || 0}/${window.performance?.memory?.totalJSHeapSize || 10}`}}</span>
+        <span><span class="green">   cKMMMMMMMMMMNWMMMMMMMMMM0:     </span>  Resolution : <span>{{$.size}}</span></span>
+        <span><span class="yellow"> .KMMMMMMMMMMMMMMMMMMMMMMMWd.     </span>  Battery : </span>
+        <span><span class="yellow"> XMMMMMMMMMMMMMMMMMMMMMMMX.       </span>├───────── Site Information ─────────────┤</span>
+        <span><span class="red">;MMMMMMMMMMMMMMMMMMMMMMMM:        </span>  Title : {{document.title}}</span>
+        <span><span class="red">:MMMMMMMMMMMMMMMMMMMMMMMM:        </span>  Charset : {{document.charset}}</span>
+        <span><span class="red">.MMMMMMMMMMMMMMMMMMMMMMMMX.       </span>  URL : {{location.href}}</span>
+        <span><span class="red"> kMMMMMMMMMMMMMMMMMMMMMMMMWd.     </span>  Shell : zsh 5.8.1</span>
+        <span><span class="purple"> .XMMMMMMMMMMMMMMMMMMMMMMMMMMk    </span>  Terminal : itaque</span>
+        <span><span class="purple">  .XMMMMMMMMMMMMMMMMMMMMMMMMK.    </span>  Font : {{getComputedStyle(document.documentElement).getPropertyValue("--font-mono").split(",")[0].replaceAll('"', "")}}</span>
+        <span><span class="blue">    kMMMMMMMMMMMMMMMMMMMMMMd      </span>└────────────────────────────────────────┘</span>
+        <span><span class="blue">     ;KMMMMMMMWXXWMMMMMMMk.       </span></span>
+        <span><span class="blue">       .cooc,.    .,coo:.         </span></span>
+    </div>
+    <div class="links">
+        {@for link in JSON.parse(localStorage.getItem("links") || "[]")}
+            <a href="{{link.url}}">
+                {{link.name}}
+            </a>
+        {/for}
+    </div>
+    <div class="spacer"></div>
+    <div class="input">
+        <span class="prompt">▲ ~/ </span>
+        <input type="text" class="input text" @keydown={(e) => {
+            const input = e?.target?.value;
+            const key = e?.key?.toLowerCase();
+
+            if (key !== "enter") return;
+
+            if (!input) return;
+
+            const [command, ...args] = input.split(" ");
+
+            switch (command) {
+                case "touch": {
+                    const [name, url] = args;
+
+                    if (!name || !url) return;
+
+                    window.updateLink(name, url);
+
+                    break;
+                }
+                case "rm": {
+                    const [name] = args;
+
+                    if (!name) return;
+
+                    window.removeLink(name);
+                    break;
+                }
+            }
+
+            e.target.value = "";
+        }}
+     />
+    </div>
+</div>
+
+<style lang="scss">
+    $bl: #32344c;
+	$blb: #424b6d;
+	$r: #ff6c8d;
+	$rb: #ff7092;
+	$g: #90d05a;
+	$gb: #a9f469;
+	$b: #6ea3fe;
+	$bb: #80b0ff;
+	$y: #e9ad5b;
+	$yb: #ff9856;
+	$p: #b38dec;
+	$pb: #c198fd;
+	$c: #009fad;
+	$cb: #00bcdb;
+	$w: #777c9c;
+	$wb: #c6ccf4;
+    
+    .console {
+        font-family: var(--font-mono);  
+        font-size: 14px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 500px;
+        border-radius: 4px;
+        box-shadow: 8px 11px 20px 0 rgba(0, 0, 0, 0.2);
+        background-color: var(--bg-secondary);
+        color: $wb;
+
+        .spacer {
+            height: 20px;
+        }
+
+        .input {
+            display: flex;
+            gap: 6px;
+
+            .prompt {
+                color: $b;
+                white-space: nowrap;
+            }
+
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: $wb;
+                font-family: var(--font-mono);
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+
+        .result {
+            white-space: break-spaces;
+        }
+
+        .links {
+            display: flex;
+            padding: 20px 0 0 62px;
+
+            a {
+                color: $bb;
+                text-decoration: none;
+                margin-right: 20px;
+
+                &:not(:nth-last-child(1))::after {
+                    content: " | ";
+                }
+
+                &:hover {
+                    color: $b;
+                }
+            }
+        }
+
+        .black {
+            color: $bl;
+        }
+
+        .blackb {
+            color: $blb;
+        }
+
+        .red {
+            color: $r;
+        }
+
+        .redb {
+            color: $rb;
+        }
+
+        .green {
+            color: $g;
+        }
+
+        .greenb {
+            color: $gb;
+        }
+
+        .blue {
+            color: $b;
+        }
+
+        .blueb {
+            color: $bb;
+        }
+
+        .yellow {
+            color: $y;
+        }
+
+        .yellowb {
+            color: $yb;
+        }
+
+        .purple {
+            color: $p;
+        }
+
+        .purpleb {
+            color: $pb;
+        }
+
+        .cyan {
+            color: $c;
+        }
+
+        .cyanb {
+            color: $cb;
+        }
+
+        .white {
+            color: $w;
+        }
+
+        .whiteb {
+            color: $wb;
+        }
+    }
+</style>
