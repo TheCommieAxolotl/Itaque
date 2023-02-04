@@ -9,8 +9,8 @@
         "build": "etcher -b"
     },
     "devDependencies": {
+        "@etcher/core": "^2.2.7",
         "@etcher/plugin-preprocess": "^1.0.2",
-        "@etcher/core": "^2.2.5",
         "sass": "^1.57.1"
     }
 }

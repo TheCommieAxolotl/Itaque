@@ -1,12 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@etcher/core': ^2.2.5
+  '@etcher/core': ^2.2.7
   '@etcher/plugin-preprocess': ^1.0.2
   sass: ^1.57.1
 
 devDependencies:
-  '@etcher/core': 2.2.5_sass@1.57.1
+  '@etcher/core': 2.2.7_sass@1.57.1
   '@etcher/plugin-preprocess': 1.0.2_sass@1.57.1
   sass: 1.57.1
 
@@ -210,8 +210,8 @@ packages:
     dev: true
     optional: true
 
-  /@etcher/core/2.2.5_sass@1.57.1:
-    resolution: {integrity: sha512-n3eEU+0bAxcMD8+SrK3RVGyca1lqkfYqwetdJtvgoev7BF+boZuhHdZcAzNZ1ysz/mNiVDHTgnbsBlfYr+HXkQ==}
+  /@etcher/core/2.2.7_sass@1.57.1:
+    resolution: {integrity: sha512-06tTvFuZGIm5Z27du+7Be0e5sG7k3xt8NdwXei81qYSGuqieyv5PgNZZuwR7y3X1LKUnQnQfP00kpofub3DURQ==}
     hasBin: true
     dependencies:
       vite: 4.0.4_sass@1.57.1

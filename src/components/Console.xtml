@@ -40,7 +40,7 @@
         <span><span class="green">               .OMMMMo            </span>  Platform : {{navigator.platform}}</span>
         <span><span class="green">               OMMM0,             </span>  GPU : Apple M1</span>
         <span><span class="green">     .;loddo:' loolloddol;.       </span>  Memory: {{`${window.performance?.memory?.usedJSHeapSize || 0}/${window.performance?.memory?.totalJSHeapSize || 10}`}}</span>
-        <span><span class="green">   cKMMMMMMMMMMNWMMMMMMMMMM0:     </span>  Resolution : <span>{{$.size}}</span></span>
+        <span><span class="green">   cKMMMMMMMMMMNWMMMMMMMMMM0:     </span>  Resolution : <span class="blank">{{$.size}}</span></span>
         <span><span class="yellow"> .KMMMMMMMMMMMMMMMMMMMMMMMWd.     </span>  Battery : </span>
         <span><span class="yellow"> XMMMMMMMMMMMMMMMMMMMMMMMX.       </span>├───────── Site Information ─────────────┤</span>
         <span><span class="red">;MMMMMMMMMMMMMMMMMMMMMMMM:        </span>  Title : {{document.title}}</span>
